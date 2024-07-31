@@ -1,1 +1,374 @@
+30/07/2024 - 2nd Day        Python
+
+
+
+Import math
+
+a=int(input("enter the num"))
+
+s=int(math.sqrt(a))
+
+b=s*s
+
+if b==a:
+
+    print("prefect square")
+
+else:
+
+    print("not prefect square")
+	
+	
+45    6.76  6    36
+121    11.0  11    121
+Algorithm: PERFECT SQUARE
+
+Read the input number N
+Find Root of N and store it a variable ROOT
+Now find the Floor of ROOT and store it in INT_ROOT
+Now check if INT_ROOT * INT_ROOT is equal to N
+If yes: print N is P S
+else  : print N is not a P S
+
+[15:09] Nithin Neelakanta Rao (Guest)
+
+What is Data ?
+Data is some information which has an implicit meaning and it is worth storing.
+
+
+
+Give a name to the below set:
+{sky, needle, fever, transistor, webcam, biology, grass, point, her, mammle}
+
+
+
+Give a name to the below set:
+{Tiruvanantapuram, Chennai, Bengaluru, Amaravati, Panjim}
+
+
+
+places/locations
+cities
+data
+capital cities
+capital cities of southern states of India
+
+
+
+Types of data?
+How we can classify the data ?
+
+
+
+w.r.t. Data Types:
+numeric
+boolean
+string
+multimedia data (images, video, audio, gif etc)
+
+
+
+w.r.t. nature of the data:
+qlalitative and quantitative data
+
+
+
+Numeric:
+  number (int, long, short, byte, tinyint, smallint, bigint)
+  number with precision (float and double)
+string
+  alphabetic (name of a place or person)
+  alphanumeric (number of a vehicle, USN of a student etc)
+
+ 
+
+[15:09] Nithin Neelakanta Rao (Guest)
+
+In Pallakkad NSS college:
+The college every year filicitates a topper and only one and always.
+
+
+
+Assume, 4 students got the top score 97. Now the college is in confusion what to do! Because there is no single topper.
+So they sent to re-correction and gave these instructions to the evaluator:
+1. If you find any grammer mistake (missing punctuations) or scratches done or not a good explanation, etc then you can remove 0.5 marks.
+2. If you find the answer is very good and good readabality etc, then give extra 0.5 marks.
+3. Any addition or deduction of marks can be done only 2 times.
+
+
+
+Thus after re-correction,
+s1 got bonus 0.5 and now the score is 97.5
+s2 got 2 times deduction and hence 1 mark reduced and score is 96
+s3 got 1 time deduction and new score is 96.5
+s4 remained with 97 because there was no changes.
+
+
+
+So, now the college NSS can declare the topper.
+What helped the college to do so?
+It is the decimal part of the number. And hence the decimal part of a number is not part of the, rather it is mentions the accuracy/precision of the number.
+
+ ARITHMETIC OPERATORS:
++  -  *  /  % 
+Additions in Python:  // **
+
+
+
+All the arithmetic operators are binary operators.
+The operator is always placed in between the operands, i.e. we must use the INFIX NOTATION syntax only.
+oprnd1 oprnd2 * (postfix notation)
++ oprnd1 prnd2  (prefix notation)
+oprnd1 - oprnd2 (Infix notation)
+The + and - operators have LESSER PRECEDENCE than * / and %
+This rule is called as BRODMAS RULE.
+Associtivity: The Arithmetic expression is always solved Left to Right.
+Arithmetic operators have Left to Right associtivity.
+x + y % z
+The modulo operation must happen 1st. Then the remainder number is added to x.
+However, the expression is read from left, that is we read 'x' first.
+Hence, all Arithmetic expressions are solved only after converting the Programmer/user written Infix expression into postfix and then the expression io solved.
+
+
+
+The i/p are numbers 
+The o/p is number
+
+
+NOTE: the way integers
+
+NOTE: The way integers are stored and the way floating point numbers are stored are different.
+
+
+
++ve integers are stored only by impleting the algorithm to convert decimal/octal/hexa-decimal numbers into binary.
+
+
+
+-ve numbers: The 2s compliment of the number is stored in memory.
+
+
+
+float/double: IEEE standard formula is used to store the number.
+
+
+
+And hence, when an Arithmetic operation happens, the Data Type of both the operands must be same. If not, one of the 2 operands is implicitly type casted.
+
+
+
+TYPE CASTING:
+Conversion of the DT of a value (usually a number) to another.
+Explicit Casting: When the programmer adds the code(syntax) for the cast to happen:
+var = '10.5'
+num = float(var) 
+Above is an example of Casting. Where we are converting a string into an integer number.
+var = 10.5
+num = int(var)
+Here we are explicitly casting float data into int data.
+Note that the decimal part (precision) is lost. Hence it is called as DOWN CAST.
+When ever we cast a lower sized data type value into a higher sized data type value, then it is called as UP CAST.
+
+
+
+var = 10.5
+num = var // This is implicit down cast
+
+
+
+w.r.t. C/C++/Java
+int num1 = 25;
+double d = num; // This is implicit up cast
+int num2 = int(d); // This explicit down cast
+
+Python Language Characteristics:
+-> Python is an Interpreted language and not a compiled language.
+-> The code is taken by the interpretor, and each instruction is
+Compiled -> Interpreted -> Run
+-> In Python the DT of a variable is set dynamically and hence we need not mention the DT of a variable, rather start using it.
+-> In Python everything is an Object including the functions.
+-> Thus we can add properties to the object which are useful during development.
+-> Python syntax is very easy to use and the language is developed such that the code is very compact and highly abstract.
+-> The trade-off with Python is that, it is slower compared with Java during the runtime and very slow compared with C/C++ runtime.
+-> Python is very suitable for building Apps that are developed on RAD sdlc.
+-> Since it is easier and faster to develop in Python, lot of Modules are built for various domains and programming dimensions like Web App development (Django and Flask), for data analytics(science), we have numpy, pandas and for data visualization we have matplotlib etc. (List is very long)
+-> Python give us buint in data structures like:
+list: mutable and ordered (can be indexed)
+set: immutable and unordered (cannot be indexed)
+tuple: immutable and ordered
+dictionary: key-value pairs (mutable and ordered)
+Along with the above, string type is implemented and all these have good amount of methods to perform various operations.
+-> Python allows us to use the Ordered DS with negetive indexing.
+-> We can create a list of lists or lists with elements that are of different types such as set, dictionary, string etc.
+-> We have the list comprehension, map method and lambda expressions and also regex which allows us to develop code for complex problems.
+-> Pethora of modules like sys, math, pickle and so many of them that helps us to develop code very fast.
+
+
+
+UNIQUE PYTHON FEATURES:
+-> There is no function overloading in Python
+-> Python allows us to develop code in OOP. But it is implicitly not a strict OOPL like Java.
+-> We should know the difference between @static method and @class method
+-> We must know as many methods that start with double underscore and ends with double underscore
+__new__()
+__init__()
+__add__()
+-----------------------------------------
+num2 = 235
+print('Num2 = ' + str(num2) + ' is smallest') # Here we are explicitly appending/concatinating a string to another.
+
+
+
+print('Num2 = ', num2, ' is smallest') # Here, the num2 will be implicitly converted to string and the appending/concatination happens implicitly.
+
+
+
+# In the above code snippet, the str(num2) is to CAST the 'int' data into 'str' data. Note that in Python, there is no Implicit Type Conversion.
+--------------------------
+Program3: small_of_two_nums.py
+
+
+
+num1 = 7 # 7 here is an int literal (constant/fixed value)
+num2 = 5
+
+
+
+if num1 < num2:
+    print('Num1 = ', num1, ' is smallest')
+else:
+    print('Num2 = ' + str(num2) + ' is smallest')
+
+
+
+
+
+
+
+
+
+
+
+ASSIGNMENTS:
+Day1:
+1. List the unique characteristics/features of Python
+2. Write a program to check if a number is Even. - DONE
+3. Write a program to convert a lower case letter to upper case. - DONE
+4. Check if a letter is vowel or consonant - DONE
+5. Check if a number is single digit or not. - DONE
+
+
+
+
+ASSIGN1  : List the unique characteristics/features of Python
+
+Python is a popular programming language known for its simplicity and versatility. Here are some of its unique characteristics and features:
+
+1. **Readability and Simplicity**
+   - **Clear and Concise Syntax**: Python's syntax is designed to be readable and clean, often described as close to human language, making it easier to learn and write.
+   - **Whitespace Significance**: Python uses indentation to define code blocks, which enforces good coding practices and improves readability.
+
+2. **Interpreted Language**
+   - **No Compilation Step**: Python is an interpreted language, meaning code is executed line by line, which simplifies the development process by allowing for quick testing and debugging.
+
+3. **Dynamic Typing**
+   - **No Need to Declare Variable Types**: Python variables are dynamically typed, meaning their data type is determined at runtime, providing flexibility in coding.
+
+4. **Extensive Standard Library**
+   - **Rich Built-in Modules**: Python's standard library is vast and includes modules for tasks ranging from file I/O, system calls, and networking to web development and data analysis.
+
+5. **Cross-Platform Compatibility**
+   - **Write Once, Run Anywhere**: Python is cross-platform, meaning Python programs can run on various operating systems, including Windows, macOS, and Linux, without modification.
+
+6. **Object-Oriented and Functional Programming**
+   - **Multi-Paradigm Support**: Python supports multiple programming paradigms, including object-oriented, functional, and procedural programming, allowing developers to choose the best approach for their task.
+
+7. **Dynamic Memory Management**
+   - **Automatic Memory Management**: Python handles memory management automatically through a built-in garbage collector, which manages the allocation and deallocation of memory.
+
+8. **High-Level Data Structures**
+   - **Built-in Data Types**: Python provides powerful built-in data structures such as lists, dictionaries, sets, and tuples, which simplify data manipulation and storage.
+
+9. **Extensive Support for Libraries and Frameworks**
+   - **Third-Party Libraries**: Python has a vast ecosystem of third-party libraries and frameworks (e.g., NumPy, Pandas, Django, Flask) that extend its capabilities for various domains, such as data science, web development, machine learning, and automation.
+
+10. **Community and Ecosystem**
+   - **Large Community**: Python has a large and active community, which contributes to extensive documentation, tutorials, and support, making it easier for newcomers to get started.
+   - **Package Management**: Python's package management system, `pip`, allows for easy installation and management of third-party libraries.
+
+11. **Integration Capabilities**
+   - **Interoperability with Other Languages**: Python can easily integrate with other programming languages like C, C++, and Java, enabling developers to leverage existing codebases and libraries.
+   - **Scripting and Automation**: Python is often used for scripting and automating repetitive tasks due to its simplicity and flexibility.
+
+12. **Embeddable**
+   - **Python as a Scripting Language**: Python can be embedded within other applications as a scripting language, adding customization and automation capabilities to those applications.
+
+13. **Interactive Mode**
+   - **Interactive Interpreter**: Python offers an interactive mode (REPL - Read-Eval-Print Loop) that allows developers to test code snippets and explore libraries in real time.
+
+14. **Extensibility**
+   - **Custom Modules and Extensions**: Python supports extending its functionality by writing custom modules in C or C++, making it suitable for performance-critical tasks.
+
+15. **Multi-threading and Multiprocessing**
+   - **Concurrency Support**: Python provides libraries for threading and multiprocessing, enabling the execution of concurrent tasks, although its Global Interpreter Lock (GIL) can limit true parallelism in some cases.
+
+These features make Python a versatile and powerful tool for a wide range of applications, from simple scripting to complex web and data science projects.
+
+
+Sure, here are some unique and perhaps less commonly highlighted characteristics and features of Python:
+
+1. **Pythonic Idioms**
+   - **List Comprehensions**: Python supports concise ways to create lists using list comprehensions, which are both readable and efficient.
+   - **The Zen of Python**: Python emphasizes readability and simplicity, encapsulated in "The Zen of Python" (import this).
+
+2. **Extensive Support for Asynchronous Programming**
+   - **Asyncio Library**: Python has built-in support for asynchronous programming with the `asyncio` library, allowing for concurrent code execution.
+
+3. **Comprehensive Error Handling**
+   - **Exception Handling**: Python provides robust exception handling with try, except, else, and finally blocks, facilitating error management and debugging.
+
+4. **Decorator Functions**
+   - **Metaprogramming**: Decorators in Python allow you to modify the behavior of functions or methods, promoting code reuse and reducing redundancy.
+
+5. **Metaclasses**
+   - **Class Customization**: Metaclasses provide a way to control the creation and behavior of classes, enabling advanced object-oriented programming techniques.
+
+6. **Powerful String Handling**
+   - **F-Strings**: Python 3.6 introduced f-strings for formatted string literals, offering a concise and readable way to embed expressions inside string literals.
+   - **Regular Expressions**: Python has strong support for regular expressions through the `re` module, aiding in complex string manipulation tasks.
+
+7. **Data Classes**
+   - **Structured Data**: The `dataclasses` module, introduced in Python 3.7, allows for the creation of classes primarily used to store data, reducing boilerplate code.
+
+8. **Integration with Jupyter Notebooks**
+   - **Interactive Development**: Python integrates seamlessly with Jupyter Notebooks, providing an interactive environment for data analysis, visualization, and exploratory programming.
+
+9. **Environmental and Context Management**
+   - **Context Managers**: With the `with` statement, Python supports context managers that facilitate resource management (e.g., file handling), ensuring proper acquisition and release of resources.
+   - **Virtual Environments**: Python's `venv` module allows for the creation of isolated environments, managing dependencies for different projects efficiently.
+
+10. **Interpreted but Optimized**
+   - **Just-in-Time Compilation**: Tools like PyPy offer just-in-time (JIT) compilation, significantly improving the execution speed of Python programs.
+
+11. **Broad Industry Adoption**
+   - **Versatility Across Domains**: Python is used across various industries such as web development (Django, Flask), data science (Pandas, SciPy), machine learning (TensorFlow, PyTorch), automation (Selenium), and more.
+
+12. **Documentation and Testing**
+   - **Docstrings and Annotations**: Python supports docstrings for documentation and type annotations for type hinting, improving code clarity and maintainability.
+   - **Unit Testing Framework**: The `unittest` module provides a framework for creating and running tests, supporting test-driven development (TDD).
+
+13. **Rich Ecosystem for Data Analysis and Visualization**
+   - **Libraries like NumPy, Pandas, Matplotlib**: Python has robust libraries for data manipulation, analysis, and visualization, making it a favorite in the data science community.
+
+14. **Community and Development Speed**
+   - **Rapid Development Cycle**: Python’s simple syntax and dynamic nature enable rapid prototyping and development, speeding up the development cycle.
+   - **Community Contributions**: A vast number of packages are available through the Python Package Index (PyPI), contributed by the community, enhancing Python’s capabilities.
+
+15. **Accessibility and Learning Resources**
+   - **Beginner-Friendly**: Python is often recommended as the first programming language due to its easy-to-understand syntax and extensive learning resources.
+   - **Comprehensive Documentation**: Python’s official documentation is thorough and well-maintained, offering clear explanations and examples for various modules and features.
+
+These features illustrate Python's flexibility, ease of use, and power, making it a go-to language for many different programming needs.
+
+
 
