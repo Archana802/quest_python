@@ -1,0 +1,28 @@
+#What is the difference between __new__() and __init__() ?
+
+  In Python, `__new__()` and `__init__()` are both special methods used in class definition, 
+    but they serve different purposes:
+
+`__new__(cls, *args, **kwargs)`:
+
+- Called before `__init__`, it's responsible for creating a new instance of the class.
+- Returns a new instance of the class.
+- Typically used for customizing instance creation, like implementing singletons or caching.
+- Receives the class `cls` as the first argument.
+
+`__init__(self, *args, **kwargs)`:
+
+- Called after `__new__`, it's responsible for initializing the newly created instance.
+- Sets the initial state of the instance by assigning values to instance variables.
+- Typically used for setting default values, performing setup, or allocating resources.
+- Receives the instance `self` as the first argument.
+
+In summary:
+
+- `__new__` creates the instance.
+- `__init__` initializes the instance.
+
+Think of it like building a house:
+
+- `__new__` is like constructing the building.
+- `__init__` is like furnishing and decorating the interior.
