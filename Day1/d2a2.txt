@@ -1,9 +1,0 @@
-# Why there is no implicit type casting in Python ?
-
-Python's design philosophy emphasizes explicitness and readability. 
-Implicit type casting can lead to unexpected behavior and bugs, making code harder to understand 
-and debug. By requiring explicit type conversions, Python ensures:
-
-1. Clarity: Code clearly shows intended conversions, reducing ambiguity.
-2. Safety: Prevents unintended type changes, reducing errors.
-3. Flexibility: Allows developers to choose appropriate conversion methods.

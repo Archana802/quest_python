@@ -1,1 +1,0 @@
-#8. Count the number of Prime digits in a number

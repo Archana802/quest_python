@@ -1,1 +1,0 @@
-#7. Print the Fibo series of n terms with 1st 2 terms as 1 and 2.
