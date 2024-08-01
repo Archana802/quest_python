@@ -1,0 +1,1 @@
+#5. Print an equi lateral triangle of n lines

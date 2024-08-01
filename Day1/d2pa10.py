@@ -1,0 +1,1 @@
+#10.Print X shape made up of stars of n lines

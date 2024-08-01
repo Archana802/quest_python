@@ -1,0 +1,1 @@
+#9. Print a hollow square of n lines
