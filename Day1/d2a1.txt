@@ -1,0 +1,12 @@
+#What is the alternative implementation of function overloading in Python?
+                 Python doesn't support function overloading in the classical sense, but there are alternative implementations to achieve similar behavior. 
+  Here are a few approaches:
+
+1. Default arguments: Use default values for arguments to create multiple "versions" of a function.
+
+2. Variable argument lists: Use `*args` and `**kwargs` to accept varying numbers of arguments.
+
+3. Single dispatch: Use the `@singledispatch` decorator from the `functools` module to define different implementations for different types.
+
+4. Method overriding: Use inheritance and method overriding to provide different implementations for different classes.
+  
