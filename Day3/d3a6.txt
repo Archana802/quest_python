@@ -1,0 +1,19 @@
+#learn list slicing and list comprehension
+
+1. List Slicing
+List slicing allows you to extract parts of a list by specifying a range of indices. The syntax for slicing is:
+
+list_name[start:stop:step]
+
+
+start: The index to begin the slice (inclusive). Defaults to 0 if omitted.
+stop: The index to end the slice (exclusive). Defaults to the length of the list if omitted.
+step: The interval between elements. Defaults to 1 if omitted.
+
+2. List Comprehension
+List comprehension provides a concise way to create lists. 
+
+expression: The expression that generates each item.
+item: The variable that takes the value of each element in the iterable.
+iterable: The collection (like a list) that you’re iterating over.
+condition (optional): A filter that only includes items where the condition is True.
