@@ -1,0 +1,29 @@
+#Can the key within a dictionary be a composite value like a list or tuple, or should it be an atomic value such as number or string?
+
+
+  In Python, dictionary keys can be any immutable type, including:
+
+1. Atomic types: numbers (int, float), strings, bytes, booleans
+2. Tuples: immutable collections of values
+3. Frozensets: immutable sets
+
+However, dictionary keys cannot be:
+
+1. Lists: mutable collections of values
+2. Dictionaries: mutable mappings
+3. Sets: mutable sets
+4. Custom class instances: unless they are immutable and hashable
+
+Tuples and frozensets can be used as keys because they are immutable and hashable,
+meaning their contents cannot be changed after creation and they can be used in a hash table (which dictionaries are implemented as).
+
+For example:
+
+`my_dict = {(1, 2): 'value1', ('a', 'b'): 'value2'}`
+
+But, you cannot use a list as a key:
+
+`my_dict = {[1, 2]: 'value1'}`  # raises a TypeError
+
+If you need to use a composite value as a key, consider converting it to a tuple or frozenset, 
+or use a different data structure, like a list of dictionaries.
