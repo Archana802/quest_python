@@ -13,7 +13,6 @@ def process_queries(queries):
         if q_type == 1:
             x = int(parts[1])
             stack.append(x)
-            # Push to max_stack if necessary
             if not max_stack or x >= max_stack[-1]:
                 max_stack.append(x)
         
@@ -34,5 +33,4 @@ num_queries = int(input('Enter the number of queries:'))
 queries = list(int('Enter the queries:'))
 
 output = process_queries(queries)
-for res in output:
-    print(res)
+
