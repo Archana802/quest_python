@@ -1,0 +1,7 @@
+#how do we round to nearest value
+
+- round(): round() function can be used to round a floating-point number 
+to a specified number of decimal places or to the nearest integer if no decimal places are specified
+- ciel () : ceil() function to round numbers up to the nearest integer. 
+The ceil() function is part of the math module in Python.
+
