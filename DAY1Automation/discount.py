@@ -28,47 +28,45 @@ HostelNames = ['ABC', 'CDE', 'EFG', 'HIJ']
 
 
 
-if gender == '1'and '3':
+if gender == '1'and '3':   #for male and others
     if age >= 60:
         print(" 15% Senior citizen discount applied, thank you for shopping", "\n")
     else :
         print("100 voucher Fastrack & Titan!!!!!, thank you for shopping", "\n")
-        if occupation == '2': # type: ignore
+        if occupation == '2': # type: ignore #for student
             pin_code = int(input('Enter your pincode:'))
-            if pin_code in PinCodes:
+            if pin_code in PinCodes: #only applicable if student in local pincode
                 print('500 coupon on Books!!!!!','\n')
-                if resident == '1':
-                    hostel_name = input('Enter hostel name:')
+                if resident == '1': #for Hosteller
+                    hostel_name = input('Enter hostel name:') #only applicable if hostelname in the list
                     if hostel_name.upper() in HostelNames:
                          print('250/- Discount on Groceries !!!!!',"\n")
-        elif resident == '1':
-            hostel_name = input('Enter hostel name:')
+        elif resident == '1': #checking hostelname for working male and others
+            hostel_name = input('Enter hostel name:') #name of hostel
             if hostel_name.upper() in HostelNames:
                 print('250/- Discount on Groceries !!!!!',"\n")
         
-#        print('Thank you for shopping','\n')
 
 
-elif gender == '2':
+elif gender == '2':  #for female
     if age >= 45:
         print(" 15% Senior citizen discount applied, thank you for shopping", "\n")
     else :
         print("100/- Discount on Nykaa & fastrack!!!!!, thank you for shopping", "\n")
-        if occupation == '2': # type: ignore
-            pin_code = int(input('Enter your pincode:'))
+        if occupation == '2': # type: ignore #for student
+            pin_code = int(input('Enter your pincode:')) #to check if the pincode in the list
             if pin_code in PinCodes:
                 print('500 coupon on Books!!!!!','\n')
-                if resident == '1':
+                if resident == '1': #for hostellers in the list of hostel names
                     hostel_name = input('Enter hostel name:')
                     if hostel_name.upper() in HostelNames:
                          print('250/- Discount on Groceries !!!!!',"\n")
     
-        elif resident == '1':
+        elif resident == '1': #hostellers in working as occupation
             hostel_name = input('Enter hostel name:')
             if hostel_name.upper() in HostelNames:
                 print('250/- Discount on Groceries !!!!!',"\n")
 
-
-    print('Thank you for shopping','\n')
+    print('Thank you for shopping','\n') #if none of the condition validates
 else:
-    print('Thank you for shopping','\n')
+    print('Thank you for shopping','\n') 
