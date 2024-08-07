@@ -1,0 +1,24 @@
+"""
+Tell about "file" argument in print method. 2 Examples
+Apart from print(), explain argument of any other method.
+"""
+
+print(file:SupportsWrite[str]) : The file argument in the print() function in Python specifies 
+where the output of the print() function should go. By default, print() sends its output to sys.stdout, 
+which typically means the console or terminal. However, by using the file argument, 
+you can redirect the output to a different stream, such as a file or 
+any other object that implements a write() method.
+
+sorted()
+iterable: Iterable[SupportsRichComparisonT@sorted], /, *, key: None = None, 
+reverse: bool = False) -> list[SupportsRichComparisonT@sorted]
+
+ -   The key argument is set to len, which is a built-in function that returns the length of a string. 
+The list words will be sorted based on the length of each word.
+ -   The reverse argument is a boolean that specifies whether the sorting should be in ascending order (default) or 
+ descending order. If reverse=True, the sorted order is reversed (i.e., descending).
+ -   iterable: It specifies the collection of items to be sorted, such as a list, tuple, or any iterable.
+
+iterable: The collection of items to be sorted (required).
+key: A function that defines the sorting criteria (optional).
+reverse: A boolean that determines whether to sort in descending order (optional).

@@ -25,7 +25,7 @@ if occupation == '2':
         resident = input("Enter Residency: \n1. Hosteller\n2. Localite \nEnter any number:")
         if resident == '1':
             hostel_name = input('Enter hostel name:')
-            if hostel_name in ['ABC', 'CDE', 'EFG', 'HIJ']:
+            if hostel_name.upper() in ['ABC', 'CDE', 'EFG', 'HIJ']:
                      print('250/- Discount on Groceries !!!!!',"\n")
         
         print('Thank you for shopping','\n')
