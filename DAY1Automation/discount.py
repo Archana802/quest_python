@@ -1,4 +1,23 @@
+"""
+* Name
+* Age
+15% discount for all product for senior citizen
 
+* Gender
+male senior citizen (60 and above)
+female senior citizen (45 and above)
+ 
+100 rupees nyka, fastrack, if female (<45)
+100 coupon on titan, fastrack, if male (<60)
+----
+*Occupation: Working, Student (PIN code should be local) 
+College: 500 coupon on books
+Working: NA
+----
+*Residence: Hosteller, Localite (Hostel name should be valid)
+Hosteller: Groceries
+Localite: NA
+"""
 
 age = int(input("Enter age: "))
 gender = input("Enter gender: \n1. Male\n2. Female\n3. Other\nEnter any number:")
