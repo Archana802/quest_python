@@ -16,7 +16,9 @@ try:
 
     print(os.getcwd())
     os.mkdir("destination")
-    shutil.copy("source/f1.txt","destination/f2.txt")
+    #shutil.move("source/f1.txt","destination/f1.txt")
+    shutil.copy("source/f1.txt","destination/f1.txt")
+    
 
 except FileNotFoundError:
     print("no file found in source")
