@@ -34,7 +34,7 @@ class StudentOrWorking(SeniorCitizen):
                         print('₹250 Discount on Groceries !!!!!')
             else:
                 print("No discount based on pincode.")
-        elif self.resident == '1'and ((self.age < 60 and self.gender.lower() == 'male') or (self.age < 45 and self.gender.lower() == 'female')):  # Hosteller
+        elif self.resident == '1':  # Hosteller
             hostel_name = input('Enter hostel name: ')
             if hostel_name.upper() in HostelNames:
                 print('₹250 Discount on Groceries !!!!!')
