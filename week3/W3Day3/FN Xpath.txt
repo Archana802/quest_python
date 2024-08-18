@@ -1,0 +1,52 @@
+
+
+class="font12 latoBlack makeFlex vrtlCenter hrtlCenter cursorPointer disabledGrey"
+
+with tick:
+
+//div[@class="font12 latoBlack makeFlex vrtlCenter hrtlCenter cursorPointer deepskyBlueText"]
+
+-------------------------------------------------------------------------------------------
+
+akarsh: filter ac
+devika: sort by price
+archana: travel operator
+gayathri: sleeper/seater
+sneha: 09hrs 00min and 08hrs 35min -> 0900 0835 ->
+
+def isGreater(time1Str, time2Str):
+    #how to use replace() string  \
+    #time1 = time1Str.replace('hrs ','').replace('min','')
+    #time2 = time2Str.replace('hrs ','').replace('min','')
+    if time1>=time2: return time1Str  else  time2Str
+
+def arrangeTime(*allTimeStamp):
+    returns time in ascending order
+
+Gokul: drop point
+Sreejith: pick up point
+arsha: clear filter
+akshara: seater seats only
+Albin: tomorrow:
+write python def to return date in 15 AUG format.
+Ameen: 2 xapth drop time filter and each bus drop time
+write def:
+input 11 PM
+output 2300
+
+Ashley:
+filter by top rated
+
+enter source 
+enter dest
+date 
+click search
+click top rated icon
+
+expected: user should see only 1 result with highest rating.
+-----------------------------------------------------------------------------------------------
+
+//span[text()="A1 Travels"]
+
+
+

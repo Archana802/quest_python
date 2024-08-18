@@ -1,0 +1,147 @@
+#3 attributes : it can be same level
+//input[@name="email"] 
+//input[@id="email"]
+--  
+
+3 different levels
+//input[@id="email"]   
+//div[@id="email_container"]/input
+-------------------------------------------------
+
+
+
+
+3 attributes:
+
+ Xpath://*[@id="pagetop"]/div[3]/a[1] 
+ Full Xpath: /html/body/div[2]/div[1]/div[3]/a[1]
+ 
+ 1. //a[@title="Login to your account"]
+          - //a[contains(@title,"Login to")]
+		  
+ 2. //a[contains(text(),'Log')] 
+ 
+ 3. //a[@aria-label="Login to your account"] - it has 2 inputs.
+          -  //*[@id="pagetop"]/div[3]/a[@aria-label="Login to your account"]   - specified login page
+ 
+ 4. //a[contains(@class,"user")]
+          
+          
+ 
+attributes : 4
+ 
+ 1. href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fwww.w3schools.com%2Fpython%2F"
+ 2. title="Login to your account"
+ 3. class="user-anonymous tnb-login-btn w3-bar-item w3-btn bar-item-hover w3-right ws-light-green ga-top ga-top-login"
+ 4. aria-label="Login to your account"
+ 
+text(): Log in
+ 
+ Xpath = //*[@id="pagetop"]/div[3]/a[cotains(text(),'Log')] 
+ Xpath = //*[@id="pagetop"]/div[3]/a[(start-with(text(),'Log')]
+ 
+
+3 levels:
+
+1. //*[@id="pagetop"]/div[3]    or  /html/body/div[2]/div[1]/div[3]
+2. //*[@id="pagetop"]           or  /html/body/div[2]/div[1]
+3. //*[@id="top-nav-bar"]       or  /html/body/div[2]
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+1. Just see elements on these two websites in developer tool (inspect element), 
+2. See the DOM (Document Object Model) and how it is arranged,
+3. See whether it has id or not.
+4. If ID not assigned, see how deep is locator and does it have enough attributes that we can catch 
+(This was your assignment as well)
+-------------------------------------------------------------------
+
+DAY 2 - 13/08/2024
+
+
+
+xpath notes:
+//div[@data-test-id="select-seats"]/parent::div/parent::div
+
+//div[@data-test-id="select-seats"]
+
+//div[@data-test-id="select-seats"]/parent::div/parent::div//p[text()='A1 Travels']
+
+//div[@data-test-id="select-seats"]/ancestor::div//p[text()='A1 Travels']
+
+//div[@data-test-id="select-seats"]/ancestor::div//p[text()='A1 Travels']
+
+p[text()='A1 Travels']
+
+//p[text()='A1 Travels']/ancestor::div[contains(@class,'busInfo')]/following-sibling::div//span
+
+//p[text()='A1 Travels']/ancestor::div[contains(@class,'busInfo')]/following-sibling::div
+
+
+Clear preference of identifying xpath:
+1. ID: exactly 1 level
+2. Xpath with attributes (no index and no text): can be multilevel
+3. use text: can be multilevel
+4. use index: can be multilevel
+
+be clear about when to use absolute and relative xpath
+try to have least number of nodes in your xpath.
+
+<div> - container </div>
+<button - 
+<input - text box first name
+<textarea - multi line text box
+<p - /p>
+<a - 
+<select>  dropdown
+	<option>  is all the entries inside a dropdown
+
+
+//p[text()='A1 Travels']/ancestor::div[contains(@class,'busInfo')]/following-sibling::div//span[contains(text(),':') and contains(@class,'latoBlack blackText')]
+
+not() : to invert a condition
+
+----------------------------------------------------------
+
+
+From login to searchbar icon
+
+Xpath = 
+
+//a[@title="Login to your account"]/ancestor::div
+
+//a[@title="Login to your account"]/ancestor::div[@id="top-nav-bar"]//
+
+//a[@title="Login to your account"]/ancestor::div[@id="top-nav-bar"]//following-sibling::div[contains(@id,'tnb-google-search')]//input[contain(@id,'google-search-input')]
+
+//a[@title="Login to your account"]/ancestor::div[@id="top-nav-bar"]//following-sibling::div[contains(@id,'tnb-google-search')]//input[contains(@id,'google-search-input')]
+
+//a[contains(@title,"Login to")]/ancestor::div[@id="top-nav-bar"]//following-sibling::div[contains(@id,'tnb-google-search')]//input[contains(@id,'google-search-input')]
+
+------------------------------------------------------------------------------------------------
+
+Assignment
+Locate element in the bus card:
+
+//*[@id="busList"]/div[2]/div[2]/div[2]
+
+//div[@class="busCardContainer "]/
+
+//p[contains(@text(),'A1 Travels')]
+
+
+
+note:
+
+Arriving date: 20 August 
+
+//p[text()='A1 Travels']/ancestor::div[@class="makeFlex false"]//span[@class="font18 blackText appendRight4 latoRegular"]/following-sibling::span[@class="font14 secondaryTxt capText"]
+
+//p[text()='A1 Travels']/ancestor::div[@class="makeFlex false"]//span[((@class="font14 secondaryTxt capText") and contains(text(),'20 Aug'))]
+
+---------------------------------------
+AC sleeper:
+
+//ancestor::div[@class="busCardContainer "]/div/div/div/p[contains(@class,"secondaryTxt nowrapStyle")]
+//div[@class="busCardContainer "]//p[contains(@class,"secondaryTxt nowrapStyle")]
